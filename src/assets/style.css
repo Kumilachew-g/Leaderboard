@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+header,
+main {
+  margin: 0 12%;
+}
+.main-class {
+  display: grid;
+  grid-gap: 38px;
+  grid-template-columns: 3fr 2fr;
+}
+.board-header {
+  display: flex;
+  justify-content: space-between;
+}
+.refresh-btn {
+  align-self: center;
+  height: 52%;
+}
+.score-board {
+  border-radius: 6px;
+  border: 2px solid black;
+}
+.board-list {
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 12px 22px;
+  list-style: none;
+}
+.div-form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.submit-btn {
+  align-self: flex-end;
+  width: 32%;
+}
