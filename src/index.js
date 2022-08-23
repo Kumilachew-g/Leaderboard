@@ -1,5 +1,6 @@
 import './assets/style.css';
 import displayList from './displayList.js';
+
 const score = [
   {
     name: 'Abebe',
