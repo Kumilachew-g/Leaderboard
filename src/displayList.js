@@ -1,8 +1,9 @@
 const boardList = document.querySelector('.board-list');
 const displayList = (inputs) => {
+  boardList.innerHTML = '';
   inputs.forEach((item, i) => {
     const newSelector = document.createElement('li');
-    newSelector.createElement = `<p>${item.name} : ${item.score} </p>`;
+    newSelector.innerHTML = `${item.user} : ${item.score}`;
     if (i % 2 === 1) {
       newSelector.style.backgroundColor = '#c0c0c0';
     }
