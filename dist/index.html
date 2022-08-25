@@ -23,9 +23,23 @@
       </div>
       <div class="div-form">
         <h2>Add Your Score</h2>
-        <input type="text" placeholder="Your Name..." required />
-        <input type="text" placeholder="Your score..." required />
-        <button type="submit" name="button" class="submit-btn">Submit</button>
+        <form id="form" class="score-form" action="index.html" method="post">
+          <input id="name-input" type="text" placeholder="Your name" required />
+          <input
+            id="score-input"
+            type="number"
+            placeholder="Your score"
+            required
+          />
+          <button
+            class="submit-btn"
+            id="submit-btn"
+            type="submit"
+            name="button"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </main>
   </body>
