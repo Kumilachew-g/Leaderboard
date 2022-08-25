@@ -20,7 +20,7 @@ main {
 
 .refresh-btn {
   align-self: center;
-  height: 52%;
+  height: 54%;
 }
 
 .score-board {
@@ -47,4 +47,10 @@ li {
 .submit-btn {
   align-self: flex-end;
   width: 32%;
+}
+
+.score-form {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
 }
