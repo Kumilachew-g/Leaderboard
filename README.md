@@ -15,7 +15,7 @@ To get a local copy up and running, follow these simple steps:
 
 ## Usage
 
-1. First copy this repo and clone it on your machine using this link.
+1. First copy this repo and clone it on your machine using this link. [Link](https://github.com/Kumilachew-g/Leaderboard.git)
 2. run 'npm install' to install the dependecies
 3. run 'npm start' to run the project
 4. run 'npm run build' to build the project
