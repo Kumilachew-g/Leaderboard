@@ -1,5 +1,5 @@
 import './assets/style.css';
-import populateList from './displayList.js';
+import displayList from './displayList.js';
 import { getScores, postScores } from './gameFunctions.js';
 
 const gameId = 'IsGWyZ5ywIUXczEDTXvL';
@@ -9,7 +9,7 @@ const form = document.querySelector('.form-to-score');
 
 refreshButton.addEventListener('click', () => {
   getScores(gameId).then((scores) => {
-    populateList(scores.result);
+    displayList(scores.result);
   });
 });
 
@@ -25,5 +25,5 @@ form.addEventListener('submit', (e) => {
 });
 
 getScores(gameId).then((scores) => {
-  populateList(scores.result);
+  displayList(scores.result);
 });
