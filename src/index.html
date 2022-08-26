@@ -9,12 +9,20 @@
   <body>
     <header class="title">
       <h1>LeaderBoard</h1>
+      <div class="toggle-div">
+        <input id="checkbox" class="checkbox" type="checkbox" />
+        <label for="checkbox" class="label-awesome">
+          <i class="bi bi-moon-fill"></i>
+          <i class="bi bi-sun-fill"></i>
+          <i class="circle-ball"></i>
+        </label>
+      </div>
     </header>
     <main class="main-class">
       <div class="board-container">
         <div class="board-header">
           <h2>Recent Scores</h2>
-          <button class="refresh-btn">Refresh</button>
+          <button class="refresh-btn" type="button">Refresh</button>
         </div>
         <div class="score-board">
           <ul class="board-list"></ul>
@@ -22,9 +30,21 @@
       </div>
       <div class="div-form">
         <h2>Add Your Score</h2>
-        <form id="form" class="score-form" action="index.html" method="post">
-          <input id="name-input" type="text" placeholder="Your name" required />
+        <form
+          id="form-to-score"
+          class="form-to-score"
+          action="index.html"
+          method="post"
+        >
           <input
+            class="name-input"
+            id="name-input"
+            type="text"
+            placeholder="Your name"
+            required
+          />
+          <input
+            class="score-input"
             id="score-input"
             type="number"
             placeholder="Your score"
@@ -41,5 +61,16 @@
         </form>
       </div>
     </main>
+    <footer>
+      <p>
+        Built With HTML, CSS and JavaScript by
+        <a
+          href="https://github.com/Kumilachew-g"
+          rel="noopener noreferrer"
+          target="_blank"
+          >@Kumilachew-g</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
