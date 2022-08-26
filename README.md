@@ -6,7 +6,7 @@ This project is built by html5 and css3, Javascript ES6, Webpack.
 
 ## Built With
 
-- Major languages: HTML5,CSS3 and JS
+- Major languages: HTML5, CSS3, JS and Webpack
 - Technologies used: linters, Lighthouse, Webhint, Stylelint
 
 ## Getting Started
