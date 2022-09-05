@@ -4,24 +4,24 @@
 
 This project is built by html5 and css3, Javascript ES6, Webpack.
 
+# Live Demo
+  [Live Demo](https://kumilachew-g.github.io/Leaderboard/dist)
+
 ## Built With
 
-- Major languages: HTML5,CSS3 and JS
+- Major languages: HTML5, CSS3, JS and Webpack
 - Technologies used: linters, Lighthouse, Webhint, Stylelint
 
 ## Getting Started
 
-**1.** Clone the repo copy of the project.
+To get a local copy up and running, follow these simple steps:
 
-```
-https://github.com/Kumilachew-g/Leaderboard.git
-```
+## Usage
 
-**2.** Navigate to the project directory :file_folder: .
-
-```
-cd Leaderboard
-```
+1. First copy this repo and clone it on your machine using this link. [Link](https://github.com/Kumilachew-g/Leaderboard.git)
+2. run 'npm install' to install the dependecies
+3. run 'npm start' to run the project
+4. run 'npm run build' to build the project
 
 ## Authors
 

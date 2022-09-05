@@ -1,28 +1,29 @@
 import './assets/style.css';
 import displayList from './displayList.js';
+import { getScores, postScores } from './gameFunctions.js';
 
-const score = [
-  {
-    name: 'Abebe',
-    score: '100',
-  },
-  {
-    name: 'Kebede',
-    score: '90',
-  },
-  {
-    name: 'Haddis',
-    score: '80',
-  },
-  {
-    name: 'Helen',
-    score: '70',
-  },
-  {
-    name: 'Hawa',
-    score: '60',
-  },
-];
+const gameId = 'dD4oc0TWT3iY8n26px8C';
 
-displayList(score);
-export default score;
+const refreshButton = document.querySelector('.refresh-btn');
+const form = document.querySelector('.form-to-score');
+
+refreshButton.addEventListener('click', () => {
+  getScores(gameId).then((scores) => {
+    displayList(scores.result);
+  });
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const body = {
+    user: document.querySelector('#name-input').value,
+    score: parseInt(document.querySelector('.score-input').value, 10),
+  };
+  postScores(gameId, body);
+  document.querySelector('#name-input').value = '';
+  document.querySelector('#score-input').value = '';
+});
+
+getScores(gameId).then((scores) => {
+  displayList(scores.result);
+});
