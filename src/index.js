@@ -2,7 +2,7 @@ import './assets/style.css';
 import displayList from './displayList.js';
 import { getScores, postScores } from './gameFunctions.js';
 
-const gameId = 'IsGWyZ5ywIUXczEDTXvL';
+const gameId = 'dD4oc0TWT3iY8n26px8C';
 
 const refreshButton = document.querySelector('.refresh-btn');
 const form = document.querySelector('.form-to-score');
