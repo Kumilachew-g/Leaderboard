@@ -13,6 +13,19 @@ refreshButton.addEventListener('click', () => {
   });
 });
 
+// Validation
+const NAME_INVALID = 'Name can have alphabets only!';
+const validateNameInput = (name) => {
+  const nameValue = name.value.trim();
+  const nameRegex = /^[a-zA-Z ]*$/;
+
+  if (!nameRegex.test(nameValue)) {
+    return false;
+  }
+
+  return true;
+};
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const body = {
